@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="Portfolio.css" rel="stylesheet">
+<link href="page1.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var menuItems = document.querySelectorAll('#menu21MegaMenu > li');
+   menuItems.forEach(function(item)
+   {
+      item.addEventListener('mouseover', function() 
+      {
+         var submenu = this.querySelector('.submenu');
+         if (!submenu) return;
+         var top = this.querySelector('.button').offsetHeight;
+         submenu.style.top = top + 'px';
+         submenu.classList.add('show');
+      });
+      item.addEventListener('mouseout', function() 
+      {
+         var submenu = this.querySelector('.submenu');
+         if (!submenu) return;
+         submenu.classList.remove('show');
+      });
+   });
+   var menuNav = document.getElementById('menu21MegaMenu-nav');
+   var menuHamburger = document.getElementById('menu21MegaMenu-hamburger');
+   var megaMenu = document.getElementById('wb_menu21MegaMenu');
+   menuNav.addEventListener('click', function() 
+   {
+      document.body.classList.remove('overflow-no-scroll');
+      megaMenu.classList.remove('open');
+   });
+   menuHamburger.addEventListener('click', function() 
+   {
+      document.body.classList.add('overflow-no-scroll');
+      megaMenu.classList.add('open');
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#menu21LayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_menu21LayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+});
+</script>
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb20.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="88" height="31"></a>
+<div id="wb_menu21LayoutGrid">
+<div id="menu21LayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_menu21Image" style="display:block;width:100%;height:auto;z-index:0;" data-top="transform: scale(1,1);" data--100-top="transform: scale(0,0);">
+<img src="images/Immortals Kutte back rocker.png" id="menu21Image" alt="" width="940" height="733">
+</div>
+<div id="wb_menu21MegaMenu" style="display:block;width:100%;text-align:center;z-index:1;">
+<div id="menu21MegaMenu-hamburger">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</div>
+<div id="menu21MegaMenu-nav">
+<div id="menu21MegaMenu-close"><a role="button" aria-hidden="true" href="#">&times;</a></div>
+<ul role="menubar" class="" id="menu21MegaMenu">
+<li role="menuitem">
+<a href="./index.html" class="nav-link button">Home</a>
+</li>
+<li role="menuitem">
+<a href="./page1.html" class="nav-link button">About</a>
+</li>
+<li role="menuitem">
+<a href="./page2.html" class="nav-link button">Past Work</a>
+</li>
+<li role="menuitem">
+<a href="./page3.html" class="nav-link button">Privacy Agreement</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_article9LayoutGrid">
+<div id="article9LayoutGrid">
+<div class="col-1">
+<div id="wb_article9Card" style="display:flex;width:100%;z-index:2;" class="card">
+<div id="article9Card-card-body">
+<div id="article9Card-card-item0">About Immortalheim</div>
+<div id="article9Card-card-item1">Hello! I hope you are well. You must be on my portfolio because you are looking for a modeller! Well I think you may have came to the right place. I am Immortalheim, a 16 year old american-italian finding my own way in this world. I have been modelling for 3 years and am certified in AutoCAD, Fusion360, AutoDesk Inventor, and OnShape. I use CAD programs over 3D modelling softwares like blender because that is my style. Click the button below to get started!</div>
+<div id="article9Card-card-item2"><a href="https://discordapp.com/users/1024480842388619354">Get Started</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
